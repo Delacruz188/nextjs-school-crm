@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function page({ params }: { params: { id: string } }) {
-  const { id } = params;
+export default async function page({ params }: { params: { id: string } }) {
+  const { id } = await params;
   return <div>Usuario{id}</div>;
 }
