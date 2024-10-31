@@ -1,9 +1,10 @@
 import React, { ReactNode } from "react";
+import DashboardNavbar from "../components/Dashboard/DashboardNavbar";
 
 export default function layout({ children }: { children: ReactNode }) {
   return (
     <div>
-      <h1>Dashboard Navbar</h1>
+      <DashboardNavbar />
       <div>{children}</div>
     </div>
   );
